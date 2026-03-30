@@ -713,81 +713,10 @@
 <section style="padding:80px 20px; text-align:center;">
   <h2 style="font-size:2rem; margin-bottom:20px;">Our Location</h2>
   <iframe 
-    src="https://www.google.com/maps?q=Hingona,Rajasthan,India&output=embed"
+    src="https://www.google.com/maps?q=Hobnob co works,Ajmer Road,Vaishali nagar,Jaipur,Rajasthan,India&output=embed"
     width="100%" height="400" style="border:0; border-radius:15px;" 
     allowfullscreen="" loading="lazy">
   </iframe>
 </section>
 
-<section style="padding:80px 20px; background:#f8f9fa; text-align:center;">
-  <h2 style="font-size:2rem; margin-bottom:20px;">Price Calculator</h2>
-  <div style="max-width:400px; margin:auto; background:white; padding:30px; border-radius:15px; box-shadow:0 10px 20px rgba(0,0,0,0.1);">
-    
-    <input type="number" id="calcPages" placeholder="Enter Pages" style="width:100%; padding:10px; margin-bottom:10px; border-radius:8px; border:1px solid #ddd;">
-    
-    <select id="calcLevel" style="width:100%; padding:10px; margin-bottom:10px; border-radius:8px; border:1px solid #ddd;">
-      <option value="10">Finance (£25/page)</option>
-      <option value="15">Management (£20/page)</option>
-      <option value="20">Law (£30/page)</option>
-      <option value="25">IT (£35/page)</option>
-      <option value="30">Software (£50/page)</option>
-    </select>
-
-    <button onclick="calculatePrice()" style="width:100%; padding:12px; background:#ff6b35; color:white; border:none; border-radius:10px; font-size:16px;">Calculate</button>
-
-    <h3 id="result" style="margin-top:20px;">Total: £0</h3>
-  </div>
-</section>
-
-<script>
-function calculatePrice() {
-  const pages = document.getElementById('calcPages').value;
-  const price = document.getElementById('calcLevel').value;
-  const total = pages * price;
-
-  document.getElementById('result').innerText = "Total: £" + (total || 0);
-}
-</script>
-
-
-<footer class="footer">
-  <div class="footer-content">
-      <div class="footer-section">
-          <h3>Services</h3>
-          <ul style="list-style: none;">
-              <li><a href="#" style="color: #ccc; text-decoration: none;">Essay Writing</a></li>
-              
-              <li><a href="#" style="color: #ccc; text-decoration: none;">Assignment Help</a></li>
-              
-              <li><a href="#" style="color: #ccc; text-decoration: none;">Dissertation</a></li>
-          </ul>
-      </div>
-      <div class="footer-section">
-          <h3>Contact Info</h3>
-          <p style="color: #ccc;">
-              WhatsApp: <a href="https://wa.me/919256466594" style="color: #25D366;">+91-92564 66594</a>
-          </p>
-          <p style="color: #ccc;">
-              Email: <a href="mailto:papermentglobal@gmail.com" style="color: #ccc;">papermentglobal@gmail.com</a>
-              
-          </p>
-      </div>
-      <div class="footer-section">
-          
-          <h3>Company</h3>
-          
-          <ul style="list-style: none;">
-              
-              <li><a href="#" style="color: #ccc;">About Us</a></li>
-              
-              <li><a href="#" style="color: #ccc;">Contact</a></li>
-              
-              <li><a href="#" style="color: #ccc;">Privacy Policy</a></li>
-              
-          </ul>
-      </div>
-  </div>
-  <div style="text-align: center; padding-top: 2rem; border-top: 1px solid #333; color: #666;">
-      <p>© 2024 Paperment Global. All rights reserved.</p>
-  </div>
-</footer>
+/* Footer */ .footer { background: #1a1a1a; color: white; padding: 60px 2rem 20px; } .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; } .footer-section h3 { margin-bottom: 1rem; color: #ff6b35; }
